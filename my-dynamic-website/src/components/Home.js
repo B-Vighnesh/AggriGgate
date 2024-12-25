@@ -18,7 +18,7 @@ const Home = () => {
     <div className="home-container">
       <ValidateToken farmerId={farmerId} token={token} role={role} />
 
-      <h1>Welcome to AgriGate</h1>
+      <h1>Welcome to AagriGgate</h1>
       <p>Connecting farmers directly with buyers for fair trade and better prices.</p>
      
       <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} showThumbs={false}>
@@ -34,7 +34,7 @@ const Home = () => {
       <section className="about-section">
         <h2>What we do?</h2>
         <p>
-          At Farmers' Direct Market, we recognize the challenges faced by farmers, including fluctuating prices, market access, and competition with larger agricultural operations. Our platform empowers small and medium-sized farmers by providing them with the tools and resources they need to thrive in a competitive landscape. By facilitating direct transactions, we help farmers retain a larger share of their sales, ensuring their hard work is rewarded. Our commitment to sustainability goes beyond fair pricing; we actively promote environmentally friendly practices by encouraging the sale of locally sourced and organic products, benefiting both consumer health and the planet. Farmers' Direct Market is more than just a platform; it’s a community that fosters collaboration and knowledge sharing. We offer resources such as workshops, webinars, and forums where farmers can exchange ideas, learn best practices, and support one another. Our user-friendly interface makes it easy for both farmers and consumers to navigate the marketplace, with features like product listings, customer reviews, and secure payment options prioritizing a seamless transaction experience. As we grow, our vision remains steadfast: to build a world where farmers can thrive, consumers can access quality produce, and communities can unite to support sustainable agriculture. Join us on this journey towards a fairer and more equitable food system, where everyone benefits from the farm-to-table experience.
+          At AagriGgate, we recognize the challenges faced by farmers, including fluctuating prices, market access, and competition with larger agricultural operations. Our platform empowers small and medium-sized farmers by providing them with the tools and resources they need to thrive in a competitive landscape. By facilitating direct transactions, we help farmers retain a larger share of their sales, ensuring their hard work is rewarded. Our commitment to sustainability goes beyond fair pricing; we actively promote environmentally friendly practices by encouraging the sale of locally sourced and organic products, benefiting both consumer health and the planet. Farmers' Direct Market is more than just a platform; it’s a community that fosters collaboration and knowledge sharing. We offer resources such as workshops, webinars, and forums where farmers can exchange ideas, learn best practices, and support one another. Our user-friendly interface makes it easy for both farmers and consumers to navigate the marketplace, with features like product listings, customer reviews, and secure payment options prioritizing a seamless transaction experience. As we grow, our vision remains steadfast: to build a world where farmers can thrive, consumers can access quality produce, and communities can unite to support sustainable agriculture. Join us on this journey towards a fairer and more equitable food system, where everyone benefits from the farm-to-table experience.
         </p>
       </section>
 

@@ -56,7 +56,7 @@ const Navbar = () => {
                 className="nav-icon"
                 style={{ width: '50px', height: '50px', marginRight: '8px' }}
               />
-              AgriGate
+              AagriGgate
             </Link>
           </div>
           <div className="hamburger-menu" onClick={toggleMenu}>

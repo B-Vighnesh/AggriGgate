@@ -6,15 +6,13 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    networks:
-      - app-network
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://db:3307/app
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: 1234
-      SPRING_JPA_HIBERNATE_DDL_AUTO: update
-      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
+      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_USER: ${DATABASE_USER}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       SPRING_APPLICATION_NAME: register-login
+      ADMIN_USERNAME: ${ADMIN_USERNAME}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
 
   my-dynamic-website:
     build:
@@ -22,19 +20,16 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-    networks:
-      - app-network
 
   db:
     image: mysql:8.0
-    container_name: mysql_container
     ports:
-      - "3307:3306"
-    networks:
-      - app-network
+      - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: app
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - db_data:/var/lib/mysql
 
-networks:
-  app-network:
+volumes:
+  db_data:
